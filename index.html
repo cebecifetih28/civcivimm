@@ -23,13 +23,27 @@
             background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
             border-radius: 15px;
+            max-width: 90%;
         }
         h1 {
-            font-size: 3em;
+            font-size: 2em; /* Başlık boyutunu küçülttüm */
             margin-bottom: 20px;
         }
         p {
-            font-size: 1.5em;
+            font-size: 1.2em; /* Paragraf boyutunu küçülttüm */
+        }
+
+        /* Mobil uyumluluk için medya sorguları */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em; /* Daha küçük ekranlarda başlık boyutunu küçülttüm */
+            }
+            p {
+                font-size: 1em; /* Daha küçük ekranlarda paragraf boyutunu küçülttüm */
+            }
+            .container {
+                padding: 15px; /* Küçük ekranlarda padding'i azalttım */
+            }
         }
     </style>
 </head>
